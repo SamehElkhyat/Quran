@@ -49,8 +49,8 @@ setData(Respose.data.tafasir.soar);
               ) {
                 return item;
               }
-            }).map((item) => (
-              <div className="col-md-12 border-radius-100">
+            }).map((item,includes) => (
+              <div className="col-md-12 border-radius-100" key={i}>
                 <div className="">
                     <>
         <Accordion className="m-2 text-white bg-dark ">

@@ -1,13 +1,15 @@
-import React, { useState } from 'react'
+'use client'
+import { useState } from 'react'
 import './navbar.css'
 import main from '../Images/allah_PNG8.png'
 import Image from 'next/image'
 import { AppBar, Box, Button, Divider, Drawer, IconButton,List,ListItem,ListItemButton,ListItemText,MenuIcon, Toolbar, Typography } from '@mui/material'
 import Link from 'next/link'
 import { AccessAlarm, ThreeDRotation,HomeIcon } from '@mui/icons-material';
-export default function page() {
-  const [open, setOpen] = useState(false);
 
+export default function Page() {
+
+  const [open, setOpen] = useState(false);
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);

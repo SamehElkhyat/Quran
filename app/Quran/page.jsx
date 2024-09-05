@@ -58,8 +58,8 @@ export default function App() {
               ) {
                 return item;
               }
-            }).map((item) => (
-              <div className="col-md-12 border-radius-100">
+            }).map((item,index) => (
+              <div className="col-md-12 border-radius-100" key={index}>
                 <div className="">
                   {item.moshaf.map((moshafs) => (
                     <>

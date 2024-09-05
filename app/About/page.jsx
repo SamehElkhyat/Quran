@@ -50,8 +50,9 @@ setData(Respose.data.radios);
               ) {
                 return item;
               }
-            }).map((item) => (
-              <div className="col-md-12 border-radius-100">
+            }).map((item) => (<>
+            
+            <div className="col-md-12 border-radius-100">
                 <div className="">
                     <>
         <Accordion className="m-2 text-white bg-dark ">
@@ -86,6 +87,8 @@ setData(Respose.data.radios);
                        </>
                 </div>
               </div>
+            </>
+           
             ))}
 
    
