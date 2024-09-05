@@ -49,7 +49,7 @@ setData(Respose.data.tafasir.soar);
               ) {
                 return item;
               }
-            }).map((item,includes) => (
+            }).map((item,i) => (
               <div className="col-md-12 border-radius-100" key={i}>
                 <div className="">
                     <>
