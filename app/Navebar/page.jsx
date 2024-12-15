@@ -2,7 +2,6 @@
 import { useState } from 'react'
 import { AppBar, Box, Button, Divider, Drawer, IconButton,List,ListItem,ListItemButton,ListItemText,MenuIcon, Toolbar, Typography } from '@mui/material'
 import Link from 'next/link'
-import { AccessAlarm, ThreeDRotation,HomeIcon } from '@mui/icons-material';
 
 export default function Page() {
 
@@ -13,9 +12,9 @@ export default function Page() {
   };
   
   const DrawerList = (
-
-    <Box className="bg-black h-100 text-white" sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
-      <h1 className="topSlider p-3 text-black">Quran Web</h1>
+    <>
+       <Box className="bg-black h-100 text-white" sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
+      <h1 className="text-3xl font-bold underline topSlider p-3 text-black">Quran Web</h1>
       <List>
           <ListItem disablePadding>
             <ListItemButton>
@@ -24,8 +23,6 @@ export default function Page() {
               <ListItemText />
             </ListItemButton>
           </ListItem>
-
-          
             <ListItem disablePadding>
           
             <ListItemButton>
@@ -37,7 +34,6 @@ export default function Page() {
             </ListItemButton>
           
             </ListItem>
-
             <ListItem disablePadding>
           
             <ListItemButton>
@@ -49,7 +45,6 @@ export default function Page() {
             </ListItemButton>
           
           </ListItem>
-          
           <ListItem disablePadding>
             
             <ListItemButton>
@@ -63,6 +58,13 @@ export default function Page() {
       <Divider />
      
     </Box>
+    
+    
+    
+    </>
+
+ 
+    
   );
   return <>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
@@ -73,7 +75,7 @@ export default function Page() {
         {DrawerList}
       </Drawer>
 
-<Box className="w-100 position-absolute top-0" sx={{ flexGrow: 1 }}>
+<Box className="w-100" sx={{ flexGrow: 1 }}>
 
       <AppBar className='main bg-danger'>
         <Toolbar>

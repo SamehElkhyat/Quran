@@ -3,6 +3,8 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 import { config } from "@fortawesome/fontawesome-svg-core";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
+import Navebar from "./Navebar/page.jsx";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,6 +20,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
 
       <body className={inter.className}>
+      <Navebar />
 
    {children}
      

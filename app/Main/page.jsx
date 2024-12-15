@@ -37,19 +37,25 @@ export default function App() {
               <ListItemText />
             </ListItemButton>
           </ListItem>
+          
+          <ListItem disablePadding>
+            <ListItemButton>
+            <Link className='text-white text-decoration-none' href='/Quran'><h4>Quran</h4></Link>               
+               
+              <ListItemText />
+            </ListItemButton>
+          </ListItem>
 
           <ListItem disablePadding>
             <ListItemButton>
             <Link className='text-white text-decoration-none' href='/About'><h4>Radio</h4></Link>               
-               
               <ListItemText />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
             <ListItemButton>
             <Link className='text-white text-decoration-none' href='/Tafseer'><h4>Tafseer</h4></Link>               
-               
-              <ListItemText />
+            <ListItemText />
             </ListItemButton>
           </ListItem>
       </List>
@@ -134,13 +140,13 @@ export default function App() {
 <div className="container mains text-white">
 <div className="row p-1 pic align-items-center ">
 
-<div className="col-sm-4">
+<div className="col-sm-3">
 <Link className="li text-white text-decoration-none" href={'/Quran'}>
 <Image className="Image w-100 h-100" src={one}></Image>
 <h4 className="text text-center">سور قرأنيه</h4>
 </Link>
 </div>
-<div className="col-sm-4">
+<div className="col-sm-3">
 <Link className="li text-white text-decoration-none" href={'/About'} >
 <Image className="Image w-100  h-100"  src={tow}></Image>
 <h4 className="text text-center">
@@ -149,8 +155,14 @@ export default function App() {
   </h4>
   </Link>
 </div>
-<div className="col-sm-4">
+<div className="col-sm-3">
 <Link className="li text-white text-decoration-none" href={'/Tafseer'} >
+<Image className="Image w-100  h-100" src={three}></Image>
+<h4 className="text text-center">   تفسير أيات قرأنيه</h4>
+</Link>
+</div>
+<div className="col-sm-3">
+<Link className="li text-white text-decoration-none" href={'/Praying'} >
 <Image className="Image w-100  h-100" src={three}></Image>
 <h4 className="text text-center">   تفسير أيات قرأنيه</h4>
 </Link>
