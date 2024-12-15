@@ -1,137 +1,142 @@
-body{
-    background-color: black;
+#AboutAllInfo {
+  background-color: var(--secondry-color) !important;
 }
-.Accordion{
-    overflow: hidden;
-} 
-.mains{
-
-    margin-top: 200px;
+.mainItem {
+  color: white;
+  font-weight: 600;
+  margin-top: 100px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
-.main{
-
-    background-color: rgb(3, 67, 3) !important;
-
+.timingSection {
+  position: absolute;
+  right: 0;
+  padding: 20px;
+  font-weight: 900;
 }
-.navbar{
-
-    font-weight: 100;
-    background-color: rgba(14, 64, 9, 0.834)!important;
-}
-.footer{
-    position: relative;
-    bottom: 0;
-    background-color: #1a1a1a;
-    padding: 20px;
-    text-align: center;
-    font-size: 14px;
+.hijri {
     width: 100%;
-    color: white;
-
+  color: green;
+  font-size: 25px;
 }
-.row{
-    margin-top: 100px !important;
+.gregorian {
+    width: 100%;
 
+  color: green;
+  font-size: 25px;
 }
-#outlined-basic{
-
-    color: white;
+.AboutItem {
+  border-radius: 30px;
+  background-color: green;
+}
+body {
+  background-color: black;
+}
+.Accordion {
+  overflow: hidden;
+}
+.mains {
+  margin-top: 200px;
+}
+.main {
+  background-color: rgb(3, 67, 3) !important;
+}
+.navbar {
+  font-weight: 100;
+  background-color: rgba(14, 64, 9, 0.834) !important;
+}
+.row {
+  margin-top: 100px !important;
+}
+#outlined-basic {
+  color: white;
 }
 .loader-container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    z-index: 1;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
 }
-
 .spinner {
-    width: 64px;
-    height: 64px;
-    border: 8px solid;
-    border-color: #3d5af1 transparent #3d5af1 transparent;
-    border-radius: 50%;
-    animation: spin-anim 1.2s linear infinite;
+  width: 64px;
+  height: 64px;
+  border: 8px solid;
+  border-color: #3d5af1 transparent #3d5af1 transparent;
+  border-radius: 50%;
+  animation: spin-anim 1.2s linear infinite;
 }
-
 @keyframes spin-anim {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-.topSlider{
-
-    background-color: rgb(3, 67, 3) !important;
-
+.topSlider {
+  background-color: rgb(3, 67, 3) !important;
 }
-.allah{
-    color: black;
-    align-items: center;
-    justify-content: center;
-    font-family: "Noto Nastaliq Urdu", serif;
-    font-weight:900;
-    font-size: 28px;
-    font-style: normal;
-    background-color: rgb(3, 67, 3) !important;
+.allah {
+  color: black;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Noto Nastaliq Urdu', serif;
+  font-weight: 900;
+  font-size: 28px;
+  font-style: normal;
+  background-color: rgb(3, 67, 3) !important;
 }
-.menu{
-    position: absolute;
-    right: 0;
-
+.menu {
+  position: absolute;
+  right: 0;
 }
-.outlined{
-    font-size: larger;
-    border-radius: 1%;
-    margin-top: 50px;
-    margin-bottom: 40px;
-    padding: 0;
-    background-color: rgb(3, 67, 3);
+.outlined {
+  font-size: larger;
+  border-radius: 1%;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  padding: 0;
+  background-color: rgb(3, 67, 3);
 }
-.contain{
-    background-color: black;
+.contain {
+  background-color: black;
 }
-.text{
-    font-family: "Noto Nastaliq Urdu", serif;
-    font-weight: 500;
-    border: solid;
-    border-color: white;
-    border-width: 1px;
-    background-color: rgb(3, 67, 3);
-    height: 60px;
+.text {
+  font-family: 'Noto Nastaliq Urdu', serif;
+  font-weight: 500;
+  border: solid;
+  border-color: white;
+  border-width: 1px;
+  background-color: rgb(3, 67, 3);
+  height: 60px;
 }
-
-
-
-.col-sm-4{
-    color: black !important;
- 
-    border: solid;   
-    
-    border-width: 20px ;
-    transition: all 200s;
-    transition-duration:0.5s;
-    transition-delay:0.4s;      
+.col-sm-4 {
+  color: black !important;
+  border: solid;
+  border-width: 20px;
+  transition: all 200s;
+  transition-duration: 0.5s;
+  transition-delay: 0.4s;
 }
-.col-sm-4:hover{
-    transform: scale(1.1);
-    transition: all 200s;
-    transition-duration:0.5s;
-    transition-delay:0.4s; 
+.col-sm-4:hover {
+  transform: scale(1.1);
+  transition: all 200s;
+  transition-duration: 0.5s;
+  transition-delay: 0.4s;
 }
-
-.li{
-    transition: all 200s;
-    transition-duration:0.7s;
-    transition-delay:0.7s;      
+.li {
+  transition: all 200s;
+  transition-duration: 0.7s;
+  transition-delay: 0.7s;
 }
-.li:hover h4{
-    transition: all 200s;
-    transition-duration:0.7s;
-    transition-delay:0.7s; 
-    color: red;
+.li:hover h4 {
+  transition: all 200s;
+  transition-duration: 0.7s;
+  transition-delay: 0.7s;
+  color: red;
 }
