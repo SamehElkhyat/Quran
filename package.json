@@ -1,15 +1,43 @@
 {
-  "homepage": "https://SamehElkhyat.github.io/Quran",
-  "name": "my-task",
-  "version": "0.1.0",
+  "name": "quran-web-app",
+  "version": "1.0.0",
+  "description": "A comprehensive Islamic digital platform featuring Quran recitations, prayer times, Islamic radio stations, and Quranic tafsir. Built with modern web technologies for the Muslim community.",
+  "keywords": [
+    "quran",
+    "islamic",
+    "prayer-times",
+    "tafsir",
+    "radio",
+    "arabic",
+    "recitation",
+    "muslim",
+    "nextjs",
+    "react",
+    "material-ui",
+    "framer-motion"
+  ],
+  "author": {
+    "name": "Quran Web Team",
+    "email": "contact@quran-web.com"
+  },
+  "license": "MIT",
+  "homepage": "https://quran-web-app.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/quran-web-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-username/quran-web-app/issues"
+  },
   "private": true,
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "type-check": "tsc --noEmit",
+    "format": "prettier --write .",
+    "analyze": "ANALYZE=true npm run build"
   },
   "dependencies": {
     "@emotion/react": "^11.11.4",
@@ -26,7 +54,6 @@
     "axios": "^1.6.8",
     "bootstrap": "^5.3.3",
     "framer-motion": "^11.2.10",
-    "gh-pages": "^6.1.1",
     "gsap": "^3.12.5",
     "lottie-react": "^2.4.0",
     "moment": "^2.30.1",
@@ -36,10 +63,31 @@
     "sharp": "^0.33.5"
   },
   "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
     "autoprefixer": "^10.4.19",
     "eslint": "^8",
     "eslint-config-next": "14.1.4",
     "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.12"
+      "prettier": "^3.0.0",
+    "tailwindcss": "^3.4.12",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
